@@ -1,0 +1,180 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detector Fake News</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#620000;
+      color:white;
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:42px;
+      margin-bottom:15px;
+    }
+
+    header p{
+      max-width:700px;
+      margin:auto;
+      font-size:18px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 25px;
+      background:#a30b03;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#a30b03;
+    }
+
+    section{
+      padding:50px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      color:#c33c27;
+    }
+
+    .sobre{
+      text-align:center;
+    }
+
+    footer{
+      background:#4a0000;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Detector Fake News</h1>
+    <p> Aplicativo e extensão para navegadores com o objetivo de ajudar estudantes a identificar fake news e 
+      informações incorretas em pesquisas, trabalhos escolares e conteúdos da internet.</p>
+
+    <a href="#" class="btn">Saiba Mais</a>
+  </header>
+
+  <section class="sobre">
+    <h2>Sobre o Projeto</h2>
+ <p>O sistema utiliza IA para analisar páginas, pesquisas e notícias, e ira cruzar informações com fontes jornalísticas e científicas confiáveis. </p>
+  </section>
+
+  <section>
+    <h2>Utilidade</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Análise</h3>
+        <p> Vai Detectar possíveis fake news e informações incorretas e/ou paricialmente incorretas automaticamente. </p>
+      </div>
+
+      <div class="card">
+        <h3>Extensão para Navegadores</h3>
+        <p>É compatível com Chrome, Edge, Firefox e Safari. </p>
+      </div>
+
+      <div class="card">
+        <h3>Histórico de Checagens</h3>
+        <p> Ele ira guardar as análises feitas pelo usuário. </p>
+      </div>
+
+      <div class="card">
+        <h3>Alerta</h3>
+        <p> Identifica os principais conteúdos suspeitos circulando na internet atualmente.</p>
+      </div>
+
+      <div class="card">
+        <h3>Segurança</h3>
+        <p> O funcionamento ocorre com consentimento, respeitando a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).  </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sobre">
+    <h2> Ferramentas Utilizadas</h2>
+ <p> Inteligência Artificial, Desenvolvimento Mobile, Extensão Web e Verificação de Dados. </p>
+  </section>
+
+  <footer>
+    <p>© 2026 - Projeto Sarah Detector de Fake News</p>
+  </footer>
+
+</body>
+</html>
+
+<div id="popup">
+  ⚠ A IA pode cometer erros. 
+  
+  <button onclick="fechar()">ok</button>
+</div>
+
+<style>
+  #popup{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background: rgb(219, 184, 184);
+    color: rgb(163, 39, 39);
+    padding: 10px;
+    width: 200px;
+  }
+
+  button{
+    margin-top: 5px;
+  }
+</style>
+
+<script>
+  function fechar(){
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
